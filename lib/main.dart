@@ -4,6 +4,7 @@ import 'package:personal_portfolio/presentation/view/about/about_me.dart';
 import 'package:personal_portfolio/presentation/view/home/home.dart';
 import 'package:personal_portfolio/presentation/view/portfolio/portfolio.dart';
 import 'package:personal_portfolio/presentation/view/portfolio/portfolio_destop.dart';
+import 'package:personal_portfolio/presentation/view/skills/skills.dart';
 import 'package:personal_portfolio/utils/constants.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         ],
       ),
       home: const Scaffold(
-        body: Portfolio(),
+        body: Skills(),
       ),
     );
   }
