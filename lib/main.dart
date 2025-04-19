@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:personal_portfolio/presentation/view/about/about_desktop.dart';
-import 'package:personal_portfolio/presentation/view/about/about_me.dart';
-import 'package:personal_portfolio/presentation/view/home/home.dart';
-import 'package:personal_portfolio/presentation/view/portfolio/portfolio.dart';
-import 'package:personal_portfolio/presentation/view/portfolio/portfolio_destop.dart';
-import 'package:personal_portfolio/presentation/view/skills/skills.dart';
+import 'package:personal_portfolio/presentation/view/main_screen.dart';
 import 'package:personal_portfolio/utils/constants.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -18,6 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Abdullah Awad",
       theme: ThemeData(
         brightness: Brightness.dark,
         primaryColor: myPrimaryColor,
@@ -34,7 +31,7 @@ class MyApp extends StatelessWidget {
         ],
       ),
       home: const Scaffold(
-        body: Skills(),
+        body: MainPage(),
       ),
     );
   }
